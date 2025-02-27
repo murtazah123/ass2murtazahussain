@@ -1,2 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+           margin: 0;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+       }
+       .container {
+           background-color: white;
+           padding: 20px;
+           border-radius: 8px;
+           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+           width: 350px;
+       }
+       h2 {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+       label {
+           font-weight: bold;
+           display: block;
+           margin-top: 10px;
+       }
+       input, select {
+           width: 100%;
+           padding: 8px;
+           margin-top: 5px;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+       }
+       .gender-group {
+           display: flex;
+           justify-content: space-between;
+       }
+       .gender-group input {
+           width: auto;
+           margin-right: 5px;
+       }
+       .checkbox {
+           display: flex;
+           align-items: center;
+           margin-top: 10px;
+       }
+       .checkbox input {
+           width: auto;
+           margin-right: 5px;
+       }
+       button {
+           width: 100%;
+           padding: 10px;
+           background-color: #28a745;
+           color: white;
+           border: none;
+           border-radius: 4px;
+           margin-top: 15px;
+           cursor: pointer;
+           font-size: 16px;
+       }
+       button:hover {
+           background-color: #218838;
+       }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Register Here</h2>
+<form action="submit.php" method="post">
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password" required>
+<label>Gender:</label>
+<div class="gender-group">
+<label><input type="radio" name="gender" value="male" required> Male</label>
+<label><input type="radio" name="gender" value="female"> Female</label>
+<label><input type="radio" name="gender" value="
