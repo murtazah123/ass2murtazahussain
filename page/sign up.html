@@ -1,253 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up Page</title>
-<style>
+  <!-- Character encoding for the page -->
+  <meta charset="UTF-8">
 
-        body {
+  <!-- Viewport settings to make the page responsive on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            font-family: Arial, sans-serif;
+  <!-- Title of the page that appears in the browser tab -->
+  <title>Sign Up Page</title>
 
-            margin: 0;
+  <!-- Internal CSS for styling the page -->
+  <style>
+    /* General body styles */
+    body {
+      font-family: Arial, sans-serif; /* Sets the font for the body */
+      margin: 0; /* Removes default margin */
+      padding: 0; /* Removes default padding */
+      text-align: center; /* Centers the text */
+    }
 
-            padding: 0;
+    /* Header styles */
+    header {
+      background-color: #f8f8f8; /* Light gray background for the header */
+      padding: 10px; /* Adds padding around the header content */
+    }
 
-            text-align: center;
+    /* Navigation styles */
+    nav {
+      margin-top: 10px; /* Adds some space between header and navigation */
+    }
 
-        }
+    /* Navigation link styles */
+    nav a {
+      margin: 0 15px; /* Adds space between links */
+      text-decoration: none; /* Removes underline from links */
+      color: black; /* Sets link color to black */
+      font-weight: bold; /* Makes the links bold */
+    }
 
-        header {
+    /* Container for the form */
+    .container {
+      margin: 50px auto; /* Centers the container with margin on top and bottom */
+      width: 50%; /* Sets the container's width */
+      padding: 20px; /* Adds padding inside the container */
+      border: 1px solid #ccc; /* Adds a light gray border */
+      border-radius: 10px; /* Rounds the corners of the container */
+      background-color: #f4f4f4; /* Light gray background for the form */
+    }
 
-            background-color: #f8f8f8;
+    /* Styles for form groups (label and input pairs) */
+    .form-group {
+      margin-bottom: 15px; /* Adds space between form groups */
+      text-align: left; /* Aligns labels to the left */
+    }
 
-            padding: 10px;
+    /* Label styles */
+    label {
+      display: block; /* Makes the label a block element */
+      font-weight: bold; /* Makes the label text bold */
+    }
 
-        }
+    /* Input field styles */
+    input {
+      width: 100%; /* Makes the input fields take up full width */
+      padding: 8px; /* Adds padding inside the input fields */
+      margin-top: 5px; /* Adds space between the label and the input field */
+      border: 1px solid #ccc; /* Light gray border for input fields */
+      border-radius: 5px; /* Rounds the corners of the input fields */
+    }
 
-        nav {
+    /* Submit button styles */
+    button {
+      padding: 10px 20px; /* Adds padding to the button */
+      border: none; /* Removes the border around the button */
+      background-color: #007BFF; /* Blue background color */
+      color: white; /* White text color */
+      font-size: 16px; /* Increases the font size */
+      cursor: pointer; /* Changes cursor to pointer on hover */
+      border-radius: 5px; /* Rounds the corners of the button */
+    }
 
-            margin-top: 10px;
-
-        }
-
-        nav a {
-
-            margin: 0 15px;
-
-            text-decoration: none;
-
-            color: black;
-
-            font-weight: bold;
-
-        }
-
-        .container {
-
-            margin: 50px auto;
-
-            width: 50%;
-
-            padding: 20px;
-
-            border: 1px solid #ccc;
-
-            border-radius: 10px;
-
-            background-color: #f4f4f4;
-
-        }
-
-        .form-group {
-
-            margin-bottom: 15px;
-
-            text-align: left;
-
-        }
-
-        label {
-
-            display: block;
-
-            font-weight: bold;
-
-        }
-
-        input {
-
-            width: 100%;
-
-            padding: 8px;
-
-            margin-top: 5px;
-
-            border: 1px solid #ccc;
-
-            border-radius: 5px;
-
-        }
-
-        button {
-
-            padding: 10px 20px;
-
-            border: none;
-
-            background-color: #007BFF;
-
-            color: white;
-
-            font-size: 16px;
-
-            cursor: pointer;
-
-            border-radius: 5px;
-
-        }
-
-        footer {
-
-            margin-top: 20px;
-
-            padding: 10px;
-
-            background-color: #f8f8f8;
-
-        }
-</style>
+    /* Footer styles */
+    footer {
+      margin-top: 20px; /* Adds margin above the footer */
+      padding: 10px; /* Adds padding inside the footer */
+      background-color: #f8f8f8; /* Light gray background for the footer */
+    }
+  </style>
 </head>
 <body>
+
+<!-- Header section with logo and navigation links -->
 <header>
-<div class="logo">
- <img src="../images/logo.png" alt="Logo">
- <span>Slovenské Vzdelávacie Centrum Manchester</span>
-</div>
-         <style>
-.logo {
-   display: flex; /* Ensures the image and text are side by side */
-   align-items: center; /* Vertically aligns the text with the image */
-   gap: 10px; /* Adds spacing between the image and text */
-}
-.logo img {
-   width: 60px; /* Adjust image size */
-   height: auto;
-}
-.logo span {
-   font-size: 16px; /* Adjust text size */
-   white-space: nowrap; /* Prevents text from wrapping to the next line */
-}
- </style>
-<nav>
-<a href="../index.html">homepage</a>
-<a href="about us.html">About us</a>
-<a href="sign up.html">Sign Up</a>
-<a href="date and fees.html">Dates and fees</a>
-<a href="educational games.html">Educational Games</a>
-<a href="event history.html">Event history</a>
-</nav>
-<div class="social-icons">
- <a href="https://www.instagram.com/">
-<img src="../images/insta.png" alt="Instagram">
- </a>
- <a href="https://x.com/">
-<img src="../images/twitter.png" alt="X (Twitter)">
- </a>
- <a href="https://www.linkedin.com/">
-<img src="../images/linkin.png" alt="LinkedIn">
- </a>
-</div>
+  <div class="logo">
+    <!-- Logo image -->
+    <img src="../images/logo.png" alt="Logo">
+    <!-- Site name text -->
+    <span>Slovenské Vzdelávacie Centrum Manchester</span>
+  </div>
+
+  <!-- Internal styles for logo alignment -->
+  <style>
+    .logo {
+      display: flex; /* Uses flexbox to align the logo image and text side by side */
+      align-items: center; /* Vertically aligns the image and text */
+      gap: 10px; /* Adds space between the image and the text */
+    }
+    .logo img {
+      width: 60px; /* Sets the width of the logo */
+      height: auto; /* Maintains the aspect ratio of the logo */
+    }
+    .logo span {
+      font-size: 16px; /* Sets the font size for the text */
+      white-space: nowrap; /* Prevents the text from wrapping */
+    }
+  </style>
+
+  <!-- Navigation menu with links to other pages -->
+  <nav>
+    <a href="../index.html">Homepage</a>
+    <a href="about us.html">About us</a>
+    <a href="sign up.html">Sign Up</a>
+    <a href="date and fees.html">Dates and fees</a>
+    <a href="educational games.html">Educational Games</a>
+    <a href="event history.html">Event history</a>
+  </nav>
+
+  <!-- Social media icons and links -->
+  <div class="social-icons">
+    <a href="https://www.instagram.com/">
+      <img src="../images/insta.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/">
+      <img src="../images/twitter.png" alt="X (Twitter)">
+    </a>
+    <a href="https://www.linkedin.com/">
+      <img src="../images/linkin.png" alt="LinkedIn">
+    </a>
+  </div>
 </header>
+
+<!-- Main content of the Sign Up page -->
 <h2>This is the Sign Up page</h2>
+
+<!-- Form container for user registration -->
 <div class="container">
-<form action="#" method="post">
-<div class="form-group">
-<label for="full-name">Full Name:</label>
-<input type="text" id="full-name" name="full-name" required>
+  <!-- Sign Up Form -->
+  <form action="#" method="post">
+    <!-- Full Name input field -->
+    <div class="form-group">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+
+    <!-- Contact Details input field -->
+    <div class="form-group">
+      <label for="contact-details">Contact Details:</label>
+      <input type="text" id="contact-details" name="contact-details" required>
+    </div>
+
+    <!-- Address input field -->
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <!-- Mobile Number input field -->
+    <div class="form-group">
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+    </div>
+
+    <!-- Social Media input field -->
+    <div class="form-group">
+      <label for="social-media">Social Media:</label>
+      <input type="text" id="social-media" name="social-media">
+    </div>
+
+    <!-- Email input field -->
+    <div class="form-group">
+      <label for="email">Email Contact:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Submit button to submit the form -->
+    <button type="submit">Sign Up</button>
+  </form>
 </div>
-<div class="form-group">
-<label for="contact-details">Contact Details:</label>
-<input type="text" id="contact-details" name="contact-details" required>
-</div>
-<div class="form-group">
-<label for="address">Address:</label>
-<input type="text" id="address" name="address" required>
-</div>
-<div class="form-group">
-<label for="mobile">Mobile Number:</label>
-<input type="tel" id="mobile" name="mobile" required>
-</div>
-<div class="form-group">
-<label for="social-media">Social Media:</label>
-<input type="text" id="social-media" name="social-media">
-</div>
-<div class="form-group">
-<label for="email">Email Contact:</label>
-<input type="email" id="email" name="email" required>
-</div>
-<button type="submit">Sign Up</button>
-</form>
-</div>
+
+<!-- Footer with copyright notice -->
 <footer>
-<p>&copy;</p>
-           
+  <p>&copy;</p>
 </footer>
+
 </body>
-</html> 
+</html>
+
+<!-- Additional CSS for layout styling -->
 <style>
-        body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
-   background-color: #f5f5f5;
-   border-bottom: 2px solid black;
-}
-.logo img {
-   width: 60px;
-   height: 60px;
-}
-nav ul {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-}
-nav ul li {
-   margin: 0 10px;
-}
-nav ul li a {
-   text-decoration: none;
-   color: black;
-   font-weight: bold;
-}
-.social-icons img {
-   width: 30px;
-   height: 30px;
-   margin: 0 5px;
-}
-main {
-   padding: 20px;
-}
-footer {
-   padding: 10px;
-   background-color: #f5f5f5;
-   border-top: 2px solid black;
-}
-footer nav ul {
-   justify-content: center;
-   display: flex;
-   padding: 10px 0;
-}
-footer nav ul li {
-   margin: 0 10px;
-}
+  body {
+    font-family: Arial, sans-serif; /* Font style for body */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centers the body content */
+  }
+
+  header {
+    display: flex; /* Uses flexbox for header layout */
+    justify-content: space-between; /* Spaces out the logo and navigation */
+    align-items: center; /* Vertically aligns items in the header */
+    padding: 10px 20px; /* Padding around the header */
+    background-color: #f5f5f5; /* Light gray background for header */
+    border-bottom: 2px solid black; /* Adds a bottom border to the header */
+  }
+
+  .logo img {
+    width: 60px; /* Logo image width */
+    height: 60px; /* Logo image height */
+  }
+
+  nav ul {
+    list-style-type: none; /* Removes list bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes navigation items appear horizontally */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Adds space between menu items */
+  }
+
+  nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets link text color to black */
+    font-weight: bold; /* Makes the links bold */
+  }
+
+  .social-icons img {
+    width: 30px; /* Size of social media icons */
+    height: 30px; /* Size of social media icons */
+    margin: 0 5px; /* Adds spacing between icons */
+  }
+
+  main {
+    padding: 20px; /* Adds padding to the main section */
+  }
+
+  footer {
+    padding: 10px; /* Padding inside footer */
+    background-color: #f5f5f5; /* Light gray background */
+    border-top: 2px solid black; /* Adds top border to footer */
+  }
+
+  footer nav ul {
+    justify-content: center; /* Centers footer navigation links */
+    display: flex; /* Displays footer links horizontally */
+    padding: 10px 0;
+  }
+
+  footer nav ul li {
+    margin: 0 10px; /* Adds spacing between footer links */
+  }
 </style>
